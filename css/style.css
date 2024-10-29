@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding-inline: 100px;
+  padding-top: 1.6rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+}
+
+.selectmenu {
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  margin-right: 1rem;
+  font-size: 20px;
+  padding: 6px 10px 6px 30px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.selectdiv {
+  position: relative;
+}
+.fa-globe {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+}
+header a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+}
+.fsec {
+  background-image: url(../cover.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  border-bottom: 8px solid #222;
+  position: relative;
+}
+.fsec::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+.fsec::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #000, transparent);
+}
+.fseccontent {
+  text-align: center;
+  z-index: 3;
+}
+
+.fseccontent h1 {
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+  font-weight: bolder;
+}
+.fseccontent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem 0;
+}
+.fseccontent p {
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem 0;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+form input {
+  padding: 12px 50px 12px 5px;
+  width: 45%;
+  outline: none;
+  border: 1px solid gray;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.377);
+  font-weight: bolder;
+  z-index: 55;
+  color: rgb(255, 255, 255);
+  text-indent: 10px;
+}
+input::placeholder {
+  color: #8c8c8c;
+  font-size: 20px;
+  text-indent: 10px;
+}
+
+form button {
+  padding: 10px 30px;
+  font-weight: 600;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  font-size: 25px;
+}
+.videosec {
+  color: white;
+  border-bottom: 8px solid #222;
+  padding: 40px 180px;
+  text-align: left;
+}
+.videosec h2 {
+  font-size: 44px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.videosec p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.vidoesec {
+  position: relative;
+}
+.vidoesec video {
+  position: absolute;
+  width: 400px;
+  top: 102px;
+  left: 96px;
+  z-index: -5;
+}
+.imgsec {
+  border-bottom: 8px solid #222;
+}
+
+.imgsec p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: white;
+}
+.imgsec h1 {
+  font-size: 44px;
+  font-weight: 600;
+  width: 100%;
+  color: white;
+}
+.sec4 video {
+  top: 55px;
+  left: 145px;
+}
+
+/* last sec */
+.lastsec {
+  padding: 50px 150px;
+  border-bottom: 8px solid #222;
+}
+.lastsec h3 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 50px 0;
+}
+
+.list {
+  width: 90%;
+  margin: auto;
+}
+.accordion {
+  background-color: #303030;
+  color: white;
+  cursor: pointer;
+  padding: 13px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion::after {
+  content: "\002B";
+  float: right;
+  margin-left: 5px;
+  font-size: 30px;
+}
+.active::after {
+  content: "\2212";
+}
+.panel {
+  background-color: #303030;
+  font-size: 20px;
+  padding: 0 20px;
+  max-height: 0;
+  color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+footer{
+  padding: 30px 100px;
+}
+footer ul li {
+  list-style: none;
+  margin-top: 10px;
+
+}
+footer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.container .aa{
+text-decoration: none;
+ margin-bottom: 20px;
+margin-left: 28px;
+ color: white;
+}
+
+
+
+@media (width<900px){
+  .videosec {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+ 
+  .videosec h2{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+  }
+.videosec p{
+font-size: 15px;
+width: 50%;
+margin: auto;
+}
+}
+@media (width<900px){
+  .imgsec {
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+    width: 100%;
+    text-align: center;
+  }
+  .videosec h2{
+    font-size: 15px;
+  }
+  form{
+    display:flex ;
+    flex-direction: column;
+  }
+  form input{
+    width: 80%;
+    margin-block: 20px;
+  }
+
+  .list{
+    width: 100%;
+   
+
+  }
+  .lastsec h3{
+font-size: 20px;
+
+  }
+  .imgsec p {
+font-size: 15px;
+width: 50%;
+margin: auto;
+  }
+  .imgsec h1 {
+font-size: 20px;
+width: 50%;
+margin: auto;
+  }
+  .lastsec{
+    overflow: hidden;
+  }
+  .content{
+    overflow: hidden;
+    width: 100%;
+  }
+  .selectdiv{
+    display: flex;
+
+    
+  
+  }
+  .selectmenu{
+    width: 25px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  header img{
+    width: 40%;
+  }
+}
+@media (width<430px){
+  header a{
+    padding: 5px  10px;
+    margin-top: 2px;
+  }
+
+  header {
+  display: flex;
+
+  flex-direction: column;
+  
+  }
+  .fseccontent h1{
+    font-size: 30px;
+  }
+
+  header img{
+    width: 150px;
+  }
+}
